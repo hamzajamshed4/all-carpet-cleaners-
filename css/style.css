@@ -509,13 +509,6 @@ ul {
   text-align: center;
 }
 
-.gallery-note {
-  margin-top: 1.5rem;
-  font-size: 0.92rem;
-  color: var(--ink-soft);
-  font-style: italic;
-}
-
 /* —— Areas —— */
 .areas {
   background: linear-gradient(160deg, var(--teal-900), var(--teal-700));
