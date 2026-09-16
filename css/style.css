@@ -1,23 +1,24 @@
 /* All Carpet Cleaners — site styles */
 
 :root {
-  --teal-900: #083834;
-  --teal-800: #0c4a45;
-  --teal-700: #146057;
-  --teal-500: #1f8a7c;
-  --mint-100: #e7f3f0;
-  --mint-50: #f3f9f7;
-  --sand-100: #efe8dc;
-  --ink: #16221f;
-  --ink-soft: #3d4f4a;
-  --cream: #f7f4ef;
+  /* Brand blues from All Carpet Cleaners logo */
+  --teal-900: #0a4a6e;
+  --teal-800: #0b6fa8;
+  --teal-700: #1490d0;
+  --teal-500: #2098e0;
+  --mint-100: #d9effa;
+  --mint-50: #f0f8fc;
+  --sand-100: #c8e6f6;
+  --ink: #123447;
+  --ink-soft: #4a6575;
+  --cream: #f5f9fc;
   --white: #ffffff;
-  --accent: #d9772f;
-  --accent-dark: #b85f1f;
-  --shadow-soft: 0 12px 40px rgba(8, 56, 52, 0.12);
+  --accent: #2098e0;
+  --accent-dark: #0b6fa8;
+  --shadow-soft: 0 12px 40px rgba(10, 74, 110, 0.14);
   --radius: 12px;
-  --header-h: 4.25rem;
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --header-h: 4.5rem;
+  --font-display: "Manrope", "Segoe UI", sans-serif;
   --font-body: "Manrope", "Segoe UI", sans-serif;
   --max: 1100px;
 }
@@ -39,8 +40,8 @@ body {
   line-height: 1.6;
   color: var(--ink);
   background:
-    radial-gradient(1200px 500px at 10% -10%, rgba(31, 138, 124, 0.12), transparent 60%),
-    radial-gradient(900px 400px at 100% 0%, rgba(217, 119, 47, 0.08), transparent 50%),
+    radial-gradient(1200px 500px at 10% -10%, rgba(32, 152, 224, 0.14), transparent 60%),
+    radial-gradient(900px 400px at 100% 0%, rgba(104, 184, 224, 0.16), transparent 50%),
     linear-gradient(180deg, var(--mint-50) 0%, var(--cream) 40%, var(--mint-50) 100%);
   overflow-x: hidden;
 }
@@ -66,8 +67,9 @@ h2,
 h3 {
   font-family: var(--font-display);
   line-height: 1.15;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--teal-900);
+  letter-spacing: -0.02em;
 }
 
 h1 {
@@ -122,7 +124,7 @@ ul {
 }
 
 .site-header.is-scrolled {
-  box-shadow: 0 6px 24px rgba(8, 56, 52, 0.1);
+  box-shadow: 0 6px 24px rgba(10, 74, 110, 0.1);
   background: rgba(247, 244, 239, 0.97);
 }
 
@@ -145,7 +147,7 @@ ul {
 }
 
 .logo-link img {
-  width: min(180px, 48vw);
+  width: min(220px, 52vw);
   height: auto;
 }
 
@@ -264,7 +266,7 @@ ul {
   padding: 0.55rem 0.8rem;
   font-size: 0.92rem;
   order: 2;
-  box-shadow: 0 4px 14px rgba(8, 56, 52, 0.22);
+  box-shadow: 0 4px 14px rgba(11, 111, 168, 0.28);
 }
 
 .phone-btn--header:hover {
@@ -277,7 +279,7 @@ ul {
   color: var(--white);
   padding: 1rem 1.5rem;
   font-size: clamp(1.05rem, 2.5vw, 1.25rem);
-  box-shadow: 0 10px 28px rgba(184, 95, 31, 0.35);
+  box-shadow: 0 10px 28px rgba(32, 152, 224, 0.4);
   animation: ctaPulse 2.8s ease-in-out infinite;
 }
 
@@ -289,10 +291,10 @@ ul {
 @keyframes ctaPulse {
   0%,
   100% {
-    box-shadow: 0 10px 28px rgba(184, 95, 31, 0.35);
+    box-shadow: 0 10px 28px rgba(32, 152, 224, 0.4);
   }
   50% {
-    box-shadow: 0 12px 34px rgba(184, 95, 31, 0.5);
+    box-shadow: 0 12px 34px rgba(32, 152, 224, 0.55);
   }
 }
 
@@ -354,8 +356,8 @@ ul {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(180deg, rgba(8, 56, 52, 0.35) 0%, rgba(8, 56, 52, 0.72) 55%, rgba(8, 56, 52, 0.9) 100%),
-    linear-gradient(90deg, rgba(8, 56, 52, 0.55) 0%, rgba(8, 56, 52, 0.15) 70%);
+    linear-gradient(180deg, rgba(10, 74, 110, 0.35) 0%, rgba(10, 74, 110, 0.72) 55%, rgba(10, 74, 110, 0.9) 100%),
+    linear-gradient(90deg, rgba(10, 74, 110, 0.55) 0%, rgba(10, 74, 110, 0.15) 70%);
 }
 
 .hero-content {
@@ -442,7 +444,7 @@ ul {
 
 .service-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 16px 36px rgba(8, 56, 52, 0.14);
+  box-shadow: 0 16px 36px rgba(10, 74, 110, 0.14);
 }
 
 .service-icon {
@@ -574,7 +576,7 @@ ul {
 /* —— Contact band —— */
 .contact-band {
   background:
-    radial-gradient(600px 240px at 20% 0%, rgba(217, 119, 47, 0.25), transparent 60%),
+    radial-gradient(600px 240px at 20% 0%, rgba(104, 184, 224, 0.28), transparent 60%),
     linear-gradient(135deg, var(--teal-800), var(--teal-900));
   color: var(--white);
   text-align: center;
@@ -598,7 +600,7 @@ ul {
 
 /* —— Footer —— */
 .site-footer {
-  background: #061f1d;
+  background: #062f45;
   color: rgba(255, 255, 255, 0.82);
   padding: 2.5rem 1rem 2rem;
   font-size: 0.95rem;
@@ -715,7 +717,7 @@ body:has(.privacy-page) .site-nav {
   }
 
   .logo-link img {
-    width: 210px;
+    width: 240px;
   }
 
   .hero-content {
